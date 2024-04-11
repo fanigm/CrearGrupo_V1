@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PILARES-Crear nuevo grupo</title>
+    <link rel="stylesheet" href="main_style.css">
+</head>
+<!--A. en estas etiquetas irían los breakdowns para hacerlo responsivo <div class="formulario_grupos"> -->
+    <body>
+            <h3> GRUPOS > HORARIO </h3>
+            <div id="main" class="formCG_main"> <!-- Este div contiene el  cuadro gris-->
+
+                <div id="inside" class="formCG_inside"> <!-- Este div contiene el  cuadro blanco-->
+                    <div class="formCG_headerinside"> <!-- Iconos y "Crea tu grupo"-->
+                        <img src="Assets/icon_fcg_pasos.svg" alt="Logo del formulario" class="icono_formgupos"> <!-- icono y clase provisionales-->
+                        <h1 class="formCG_texto1"> Crea tu grupo</h1>
+                        <img src="Assets/icon_fcg_x.svg" alt="Logo del formulario" class="icono_formgupos"> <!-- icono y clase provisionales-->
+                    </div>
+                    <br>
+                    <input class="select" type="text" placeholder="Selecciona cursos" name="" id=""> <!-- Dropdown de cursos-->
+
+                    <div> <!-- Textos arriba de calendarios (falta formato)-->
+                        <h3> Fecha de creación</h3>
+                        <h3> Fecha de finalización</h3>
+                    </div>
+                     <div> <!-- Calendarios-->
+                        <input type="date" name="inicio"
+                        placeholder="dd-mm-yyyy" value="">
+                        <input type="date" name="fin"
+                        placeholder="dd-mm-yyyy" value="">
+                    </div>            
+<br>
+                    <div> <!-- Textos arriba horarios-->
+                        <h3> Horarios</h3>
+                        <p> Elige los días y los horarios que tendrá el grupo</p>
+                    </div>
+<br>
+                <div class="formCG_horarios"> <!-- Div de los check boxes (días y horarios)// PERO esta forma no es la ideal porque tenemos un campo para día/inicio/fin en lugar de lunes-->
+
+                    <fieldset class="formCG_diahora"> <!-- Checkboxes de días-->
+
+                        <div>
+                        <input type="checkbox" id="lunes" name="lunes" />
+                        <label for="Lunes">Lunes</label>
+                        </div>
+                    
+                      <div>
+                        <input type="checkbox" id="Martes" name="Martes" />
+                        <label for="Martes">Martes</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="Miércoles" name="Miércoles" />
+                        <label for="Miércoles">Miércoles</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="Jueves" name="Jueves" />
+                        <label for="Jueves">Jueves</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="Viernes" name="Viernes" />
+                        <label for="Viernes">Viernes</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="Sábado" name="Sábado" />
+                        <label for="Sábado">Sábado</label>
+                      </div>
+
+                      <div>
+                        <input type="checkbox" id="Domingo" name="Domingo" />
+                        <label for="Domingo">Domingo</label>
+                      </div>
+                    </fieldset>
+
+                    <fieldset class="formCG_diahora"> <!-- Checkboxes de horas de inicio-->
+                        <div>
+                        <input type="time" id="lunes_hora" name="lunes_hora" value="00:00"/>
+                        </div>
+                    
+                      <div>
+                        <input type="time" id="martes_hora" name="martes_hora" value="00:00"/>
+                      </div>
+
+                      <div>
+                        <input type="time" id="miércoles_hora" name="miércoles_hora" value="00:00"/>
+                      </div>
+
+                      <div>
+                        <input type="time" id="jueves_hora" name="jueves_hora" value="00:00"/>
+                      </div>
+
+                      <div>
+                        <input type="time" id="viernes_hora" name="viernes_hora" value="00:00"/>
+                      </div>
+
+                      <div>
+                        <input type="time" id="sábado_hora" name="sábado_hora" value="00:00"/>
+                      </div>
+
+                      <div>
+                        <input type="time" id="domingo_hora" name="domingo_hora" value="00:00"/>
+                      </div>
+                    </fieldset>
+
+
+                    <div> <!-- En una clase meter altura weight color-->
+                        <img src="Assets/fcg_linea.png" alt="linea1"> <br>
+                        <img src="Assets/fcg_linea.png" alt="linea2"> <br>
+                        <img src="Assets/fcg_linea.png" alt="linea3"> <br>
+                        <img src="Assets/fcg_linea.png" alt="linea4"> <br>
+                        <img src="Assets/fcg_linea.png" alt="linea5"> <br>
+                        <img src="Assets/fcg_linea.png" alt="linea6"> <br>
+                        <img src="Assets/fcg_linea.png" alt="linea7"> <br>
+                    </div>
+
+                    <fieldset class="formCG_diahora"> <!-- Checkboxes de horas de fin-->
+                        <div>
+                        <input type="time" id="lunes_horafin" name="lunes_horafin" value="00:00"/>
+                        </div>
+                    
+                      <div>
+                        <input type="time" id="martes_horafin" name="martes_horafin" value="00:00"/>
+                      </div>
+
+                      <div>
+                        <input type="time" id="miércoles_horafin" name="miércoles_horafin" value="00:00"/>
+                      </div>
+
+                      <div>
+                        <input type="time" id="jueves_horafin" name="jueves_horafin" value="00:00"/>
+                      </div>
+
+                      <div>
+                        <input type="time" id="viernes_horafin" name="viernes_horafin" value="00:00"/>
+                      </div>
+
+                      <div>
+                        <input type="time" id="sábado_horafin" name="sábado_horafin" value="00:00"/>
+                      </div>
+
+                      <div>
+                        <input type="time" id="domingo_horafin" name="domingo_horafin" value="00:00"/>
+                      </div>
+                    </fieldset>
+                </div> <!--Ver comentario en 39-->
+
+                <input class="boton" type="button" value="Enviar" placeholder="Enviar">
+
+                </div>
+
+                <div class="formCG_checkhorarios"> <!-- Así tenía que quedar para guardar la info de un día en un solo valor. Hay que replicarlo para cada día y meterlo en el div-->
+                    <input type="checkbox" id="lunes" name="lunes" />
+                    <p> Lunes </p>
+                    <input type="time" name="iniciolunes" id="iniciolunes">
+                        <div>
+                            <p> --- </p>
+                        </div>
+                    <input type="time" name="finlunes" id="finlunes">
+                </div>
+
+
+
+            </div>
+    </body>
+<!--A. ver comentario en 8 </div> -->
+</html>
